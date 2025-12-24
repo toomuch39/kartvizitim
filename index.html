@@ -3,61 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adın Soyadın - İletişim</title>
+    <title>Hakan Seven - Ekin Gayrimenkul</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 400px; margin: 50px auto; padding: 20px; text-align: center; background: #f5f5f5; }
-        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .name { font-size: 24px; font-weight: bold; color: #333; margin-bottom: 10px; }
-        .title { color: #666; font-size: 16px; margin-bottom: 20px; }
-        .info { text-align: left; margin: 15px 0; }
-        .info strong { color: #333; }
-        .add-contact { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; margin-top: 20px; }
-        .add-contact:hover { background: #0056b3; }
-        .social { margin: 20px 0; }
-        .social a { margin: 0 10px; color: #007bff; text-decoration: none; }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            max-width: 420px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            text-align: center; 
+            background: #f8f9fa; 
+            color: #333; 
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 16px; 
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12); 
+        }
+        .logo {
+            width: 140px;          /* Boyut iyi duruyor, istersen değiştir */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 0;      /* Tamamen köşesiz - yuvarlak istemiyordun */
+        }
+        .name { 
+            font-size: 28px; 
+            font-weight: bold; 
+            color: #1a1a1a; 
+            margin-bottom: 8px; 
+        }
+        .title { 
+            font-size: 18px; 
+            color: #555; 
+            margin-bottom: 25px; 
+        }
+        .info { 
+            text-align: left; 
+            line-height: 1.8; 
+            margin: 20px 0; 
+        }
+        .info p { 
+            margin: 12px 0; 
+            font-size: 16px; 
+        }
+        .info strong { 
+            color: #000; 
+        }
+        .add-contact { 
+            background: #007bff; 
+            color: white; 
+            padding: 14px 32px; 
+            border: none; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            font-size: 17px; 
+            font-weight: bold; 
+            margin: 25px 0; 
+            transition: background 0.3s; 
+        }
+        .add-contact:hover { 
+            background: #0056b3; 
+        }
+        .social { 
+            margin: 20px 0; 
+            font-size: 15px; 
+        }
+        .social a { 
+            color: #007bff; 
+            text-decoration: none; 
+            margin: 0 12px; 
+        }
+        .social a:hover { 
+            text-decoration: underline; 
+        }
+        .footer { 
+            font-size: 12px; 
+            color: #888; 
+            margin-top: 30px; 
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1 class="name">Adın Soyadın</h1>
-        <p class="title">Unvanın - Şirket Adın</p>
+        <img src="logo.png" alt="Ekin Gayrimenkul Logo" class="logo">
+        
+        <h1 class="name">Hakan Seven</h1>
+        <p class="title">Ekin Gayrimenkul Danışmanlığı</p>
         
         <div class="info">
-            <p><strong>📱 Telefon:</strong> +90 5xx xxx xx xx</p>
-            <p><strong>✉️ E-posta:</strong> ad.soyad@ornek.com</p>
-            <p><strong>🏢 Şirket:</strong> Şirket Adın</p>
+            <p><strong>📱 Telefon:</strong> 0545 920 03 40</p>
+            <p><strong>📞 Alternatif:</strong> 0545 092 03 46</p>
+            <p><strong>✉️ E-posta:</strong> ekingayrimenkul39@gmail.com</p>
+            <p><strong>🌐 Web Sitesi:</strong> <a href="https://ekin-gayrimenkul-ilan-haz-rlama-5kz2mbbpox6lrrjlqq695t.streamlit.app" target="_blank">İlan Hazırlama Sayfası</a></p>
         </div>
         
         <button class="add-contact" onclick="addToContacts()">📋 Rehbere Ekle</button>
         
         <div class="social">
-            <a href="https://linkedin.com/in/adın" target="_blank">LinkedIn</a> |
-            <a href="https://instagram.com/adın" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/ekingayrimenkul39" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/profile.php?id=61583111844881" target="_blank">Facebook</a>
         </div>
         
-        <p style="font-size: 12px; color: #999; margin-top: 30px;">
-            © 2025 Adın Soyadın - Tüm hakları saklıdır
-        </p>
+        <p class="footer">© 2025 Hakan Seven - Ekin Gayrimenkul - Tüm hakları saklıdır</p>
     </div>
 
     <script>
         function addToContacts() {
             const vCardData = `BEGIN:VCARD
 VERSION:3.0
-N:Soyadın;Adın;;
-FN:Adın Soyadın
-ORG:Şirket Adın
-TITLE:Unvanın
-TEL;TYPE=CELL:+90 5xx xxx xx xx
-EMAIL:ad.soyad@ornek.com
-URL:https://linkedin.com/in/adın
+N:Seven;Hakan;;
+FN:Hakan Seven
+ORG:Ekin Gayrimenkul Danışmanlığı
+TITLE:Gayrimenkul Danışmanı
+TEL;TYPE=CELL:+905459200340
+TEL;TYPE=WORK:+905450920346
+EMAIL:ekingayrimenkul39@gmail.com
+URL:https://ekin-gayrimenkul-ilan-haz-rlama-5kz2mbbpox6lrrjlqq695t.streamlit.app
 END:VCARD`;
             
             const blob = new Blob([vCardData], {type: 'text/vcard'});
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'ad-soyad.vcf';
+            a.download = 'hakan-seven.vcf';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
