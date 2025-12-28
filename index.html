@@ -5,108 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakan Seven - Ekin Gayrimenkul</title>
     <style>
-        body { 
-            font-family: Arial, Helvetica, sans-serif; 
-            max-width: 420px; 
-            margin: 40px auto; 
-            padding: 20px; 
-            text-align: center; 
-            background: #f8f9fa; 
-            color: #333; 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 420px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+            background: #f8f9fa;
+            color: #333;
         }
-        .card { 
-            background: white; 
-            padding: 30px; 
-            border-radius: 16px; 
-            box-shadow: 0 6px 12px rgba(0,0,0,0.12); 
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
         }
         .logo {
-            width: 140px;          /* Boyut iyi duruyor, istersen değiştir */
+            width: 140px;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 0;      /* Tamamen köşesiz - yuvarlak istemiyordun */
+            border-radius: 0;
         }
-        .name { 
-            font-size: 28px; 
-            font-weight: bold; 
-            color: #1a1a1a; 
-            margin-bottom: 8px; 
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 8px;
         }
-        .title { 
-            font-size: 18px; 
-            color: #555; 
-            margin-bottom: 25px; 
+        .title {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 25px;
         }
-        .info { 
-            text-align: left; 
-            line-height: 1.8; 
-            margin: 20px 0; 
+        .info {
+            text-align: left;
+            line-height: 1.8;
+            margin: 20px 0;
         }
-        .info p { 
-            margin: 12px 0; 
-            font-size: 16px; 
+        .info p {
+            margin: 12px 0;
+            font-size: 16px;
         }
-        .info strong { 
-            color: #000; 
+        .info strong {
+            color: #000;
         }
-        .add-contact { 
-            background: #007bff; 
-            color: white; 
-            padding: 14px 32px; 
-            border: none; 
-            border-radius: 10px; 
-            cursor: pointer; 
-            font-size: 17px; 
-            font-weight: bold; 
-            margin: 25px 0; 
-            transition: background 0.3s; 
+        .add-contact {
+            background: #007bff;
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: bold;
+            margin: 25px 0;
+            transition: background 0.3s;
         }
-        .add-contact:hover { 
-            background: #0056b3; 
+        .add-contact:hover {
+            background: #0056b3;
         }
-        .social { 
-            margin: 20px 0; 
-            font-size: 15px; 
+        .social {
+            margin: 20px 0;
+            font-size: 15px;
         }
-        .social a { 
-            color: #007bff; 
-            text-decoration: none; 
-            margin: 0 12px; 
+        .social a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 12px;
         }
-        .social a:hover { 
-            text-decoration: underline; 
+        .social a:hover {
+            text-decoration: underline;
         }
-        .footer { 
-            font-size: 12px; 
-            color: #888; 
-            margin-top: 30px; 
+        .footer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <div class="card">
         <img src="logo.png" alt="Ekin Gayrimenkul Logo" class="logo">
-        
+       
         <h1 class="name">Hakan Seven</h1>
         <p class="title">Ekin Gayrimenkul Danışmanlığı</p>
-        
+       
         <div class="info">
             <p><strong>📱 Telefon:</strong> 0545 920 03 40</p>
             <p><strong>📞Alternatif:</strong> 0545 920 03 46</p>
             <p><strong>✉️ E-posta:</strong> ekingayrimenkul39@gmail.com</p>
-            <p><strong>🌐 Web Sitesi:</strong> <a href="https://ekin-gayrimenkul-ilan-haz-rlama-5kz2mbbpox6lrrjlqq695t.streamlit.app" target="_blank">İlan Hazırlama Sayfası</a></p>
+            <p><strong>🌐 Web Siteleri:</strong></p>
+            <p><a href="https://www.emlakjet.com/emlak-ofisleri-detay/ekin-gayrimenkul-2171140" target="_blank">Emlakjet - Ekin Gayrimenkul Ofisi</a></p>
+            <p><a href="https://ekin-gayrimenkul-ilan-haz-rlama-5kz2mbbpox6lrrjlqq695t.streamlit.app" target="_blank">İlan Hazırlama Sayfası</a></p>
         </div>
-        
+       
         <button class="add-contact" onclick="addToContacts()">📋 Rehbere Ekle</button>
-        
+       
         <div class="social">
             <a href="https://www.instagram.com/ekingayrimenkul39" target="_blank">Instagram</a> |
             <a href="https://www.facebook.com/profile.php?id=61583111844881" target="_blank">Facebook</a>
         </div>
-        
+       
         <p class="footer">© 2025 Hakan Seven - Ekin Gayrimenkul - Tüm hakları saklıdır</p>
     </div>
-
     <script>
         function addToContacts() {
             const vCardData = `BEGIN:VCARD
@@ -118,9 +119,10 @@ TITLE:Gayrimenkul Danışmanı
 TEL;TYPE=CELL:+905459200340
 TEL;TYPE=WORK:+905450920346
 EMAIL:ekingayrimenkul39@gmail.com
+URL:https://www.emlakjet.com/emlak-ofisleri-detay/ekin-gayrimenkul-2171140
 URL:https://ekin-gayrimenkul-ilan-haz-rlama-5kz2mbbpox6lrrjlqq695t.streamlit.app
 END:VCARD`;
-            
+           
             const blob = new Blob([vCardData], {type: 'text/vcard'});
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
